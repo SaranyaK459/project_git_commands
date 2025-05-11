@@ -14,11 +14,11 @@ cat <<EOF> filepath followed by content of file then ending with EOF
 
 az storage account keys list --account-name storagproject6 --resource-group project6rg --query "[0].value" --output tsv
 
-az storage blob upload --account-name storagproject6 --account-key Q0Qh/Ps3qVkiImojvDiu1CT+OPISpccIFm5we0VxPIvnqN2k/x2UI76Z0qjColiG/4n4ycirzIrw+AStYFvDIA== --container-name '' --name error404.html --file "C:\Users\ravit\Desktop\Saranya_Kuchhu\NCPL\proj6\error404.html"
+az storage blob upload --account-name storagproject6 --account-key YOUR_KEY_VALUE --container-name '' --name error404.html --file "C:\Users\ravit\Desktop\Saranya_Kuchhu\NCPL\proj6\error404.html"
 
 az storage account update --name storagproject6 --resource-group project6rg --allow-blob-public-access true
 
-az storage container set-permission --name '' --account-name storagproject6 --account-key Q0Qh/Ps3qVkiImojvDiu1CT+OPISpccIFm5we0VxPIvnqN2k/x2UI76Z0qjColiG/4n4ycirzIrw+AStYFvDIA== --public-access blob
+az storage container set-permission --name '' --account-name storagproject6 --account-key YOUR_KEY_VALUE --public-access blob
 
 
 az storage account show --name storagproject6 --resource-group project6rg --query "primaryEndpoints.web" --output table

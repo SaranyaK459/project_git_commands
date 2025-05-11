@@ -1,0 +1,1 @@
+"Topics covered in today's session are as follows- Introduction to Git, Git Structure and usecases, git branching and version control, tracking changes and commits, Pull/Merge requests and code review"
